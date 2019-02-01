@@ -2,6 +2,7 @@
 <html>
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,7 +39,8 @@
   <nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -50,58 +52,57 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li>
-              <a href="#" role="button" aria-expanded="false">
-                    VR </span> <span class="label">The new area</span>
-              </a>
-            </li>
-            <li>
-              <a href="#!" role="button" aria-expanded="false">
-                      Tournament </span> <span class="label">All of the informations</span>
-              </a>
-            </li>
-            <li class="dropdown dropdown-hover">
-              <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      Games <span class="caret"></span> <span class="label">Try your luck</span>
-              </a>
+          <li>
+            <a href="#" role="button" aria-expanded="false">
+              VR </span> <span class="label">The new area</span>
+            </a>
+          </li>
+          <li>
+            <a href="matches-list.html" role="button" aria-expanded="false">
+              Tournament </span> <span class="label">All of the informations</span>
+            </a>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              Games <span class="caret"></span> <span class="label">Try your luck</span>
+            </a>
             <div class="dropdown-menu">
               <ul role="menu">
                 <li><a href="#">Quizz</a>
                 </li>
-                <li><a href="#">E-Sport bets</a>
+                <li><a href="bet.html">E-Sport bets</a>
                 </li>
               </ul>
             </div>
           </li>
           <li>
             <a href="#!" role="button" aria-expanded="false">
-                    Informations </span> <span class="label">On the spot</span>
+              Informations </span> <span class="label">On the spot</span>
             </a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown dropdown-hover">
             <a href="#!" role="button" aria-expanded="false">
-                      Connection <span class="label">Log In</span>
-                    </a>
-                </li>
-              </ul>
-            </div>
+              Login
+            </a>
+          </li>
         </ul>
       </div>
+      </ul>
+    </div>
     </div>
   </nav>
   <!-- /Navbar -->
 
 
   <!-- Main Content -->
-  <section class="content-wrap" >
+  <section class="content-wrap">
 
     <!-- Banner -->
     <section class="youplay-banner banner-top youplay-banner-parallax">
       <div class="image" style="background-image: url('assets/images/banner-bg.jpg')">
       </div>
-
       <div class="info">
         <div>
           <div class="container">
@@ -117,7 +118,7 @@
     </section>
     <!-- /Banner -->
 
-    
+
     <!-- Partners -->
     <section class="youplay-banner youplay-banner-parallax small mt-80">
       <div class="image" style="background-image: url('assets/images/banner-witcher-3.jpg');">
@@ -127,7 +128,7 @@
         <div>
           <h2 class="mb-40">Partners</h2>
 
-          <div class="row"> 
+          <div class="row">
             <div class="col-md-10 col-md-offset-1">
               <div class="owl-carousel" data-autoplay="6000">
                 <div class="item">
@@ -258,36 +259,37 @@
 
   <!-- init youplay -->
   <script>
-    if(typeof youplay !== 'undefined') {
-        youplay.init({
-            // enable parallax
-            parallax:         true,
-    
-            // set small navbar on load
-            navbarSmall:      false,
-    
-            // enable fade effect between pages
-            fadeBetweenPages: true,
-    
-            // twitter and instagram php paths
-            php: {
-                twitter: './php/twitter/tweet.php',
-                instagram: './php/instagram/instagram.php'
-            }
-        });
+    if (typeof youplay !== 'undefined') {
+      youplay.init({
+        // enable parallax
+        parallax: true,
+
+        // set small navbar on load
+        navbarSmall: false,
+
+        // enable fade effect between pages
+        fadeBetweenPages: true,
+
+        // twitter and instagram php paths
+        php: {
+          twitter: './php/twitter/tweet.php',
+          instagram: './php/instagram/instagram.php'
+        }
+      });
     }
   </script>
 
 
   <script type="text/javascript">
-    $(".countdown").each(function() {
-        $(this).countdown($(this).attr('data-end'), function(event) {
-          $(this).text(
-            event.strftime('%D days %H:%M:%S')
-          );
-        });
+    $(".countdown").each(function () {
+      $(this).countdown($(this).attr('data-end'), function (event) {
+        $(this).text(
+          event.strftime('%D days %H:%M:%S')
+        );
+      });
     })
   </script>
 
 </body>
+
 </html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WebApp</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="jquery-3.3.1.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="../assets/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="../assets/bower_components/font-awesome/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="../assets/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="../assets/youplay/css/youplay.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="../dark/assets/css/custom.css" />
+
+</head>
+
+
+<body>
+
+  <div class="page-preloader preloader-wrapp">
+    <img src="assets/images/logo.png" alt="">
+    <div class="preloader"></div>
+  </div>
+
+  <nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" role="button" aria-expanded="false">
+              VR </span> <span class="label">The new area</span>
+            </a>
+          </li>
+          <li>
+            <a href="matches-list.html" role="button" aria-expanded="false">
+              Tournament </span> <span class="label">All of the informations</span>
+            </a>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              Games <span class="caret"></span> <span class="label">Try your luck</span>
+            </a>
+            <div class="dropdown-menu">
+              <ul role="menu">
+                <li><a href="#">Quizz</a>
+                </li>
+                <li><a href="#">E-Sport bets</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#!" role="button" aria-expanded="false">
+              Informations </span> <span class="label">On the spot</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown dropdown-hover">
+            <a href="#!" role="button" aria-expanded="false">
+              Login
+            </a>
+          </li>
+        </ul>
+      </div>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <!-- Main Content -->
+  <section class="content-wrap">
+
+    <!-- Banner -->
+    <div class="youplay-banner youplay-banner-parallax banner-top">
+      <div class="image" style="background-image: url('assets/images/cup.jpeg');">
+      </div>
+
+      <div class="info">
+        <div>
+          <div class="container">
+
+            <div class="pt-40 pb-40">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h1>Blast It - Semi Finals 1</h1>
+                  <div class="h5 mnt-10 mb-40">12th May 2019, 5:30 pm</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="youplay-match-left">
+                    <div class="youplay-match">
+                      <div class="youplay-match-data text-right">
+                        <h3>Faze</h3>
+                      </div>
+                      <div class="angled-img">
+                        <div class="img">
+                          <img src="assets/images/faze.png" alt="Faze"> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 text-center">
+                  <div class="youplay-match-vs" style="width: 110px">
+                    <span><input type="checkbox" class="pull-left" style="width:20px; height: 20px"> : <input type="checkbox"
+                        class="pull-right" style="width:20px; height: 20px"></span>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="youplay-match-right">
+                    <div class="youplay-match">
+                      <div class="angled-img">
+                        <div class="img">
+                          <img src="assets/images/NIP.png" alt="NIP" style="background-color: black"> <br>
+                        </div>
+                      </div>
+                      <div class="youplay-match-data">
+                        <h3>NIP</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a id="validate" href="#!" class="btn btn-lg" data-target="#validate">Bet !</a>
+                </div>
+              </div>
+            </div>
+            <div class="pt-40 pb-40">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h1>Blast It - Semi Finals 2</h1>
+                  <div class="h5 mnt-10 mb-40">12th May 2019, 6:00 pm</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="youplay-match-left">
+                    <div class="youplay-match">
+                      <div class="youplay-match-data text-right">
+                        <h3>Team Envy</h3>
+                      </div>
+                      <div class="angled-img">
+                        <div class="img">
+                          <img src="assets/images/Team_EnVyUs-logo.png" alt="Envy" style="background: black"> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 text-center">
+                  <div class="youplay-match-vs" style="width: 110px">
+                    <span><input type="checkbox" class="pull-left" style="width:20px; height: 20px"> : <input type="checkbox"
+                        class="pull-right" style="width:20px; height: 20px"></span>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="youplay-match-right">
+                    <div class="youplay-match">
+                      <div class="angled-img">
+                        <div class="img">
+                          <img src="assets/images/G2_Esports.png" alt="G2_Esports" style="background-color: white">
+                        </div>
+                      </div>
+                      <div class="youplay-match-data">
+                        <h3>G2_Esports</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 text-center">
+                  <a id="validate2" href="#!" class="btn btn-lg" data-target="#validate2">Bet !</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Banner -->
+
+    <div class="container youplay-content">
+
+      <div class="row">
+        <div class="col-md-9">
+          <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#tab-cs" aria-controls="tab-cs" role="tab" data-toggle="tab" aria-expanded="true">Recent bets</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+
+              <!-- CS Matches -->
+              <div role="tabpanel" class="tab-pane active" id="tab-all">
+                <div class="youplay-matches-list">
+                  <a class="youplay-single-match">
+
+                    <div class="pull-left">
+                      <div class="angled-img">
+                        <div class="img">
+                          <img src="assets/images/NIP.png" alt="NIP" style="background-color: black">
+                        </div>
+                      </div>
+                      <h5 class="text-center">Ninjas in Pyjamas</h5>
+                    </div>
+
+                    <div class="pull-left ml-30">
+                      <div class="angled-img">
+                        <div class="img">
+                          <img src="assets/images/clan-fnatic.jpg" alt="fnatic">
+                        </div>
+                      </div>
+                      <h5 class="text-center">FNATIC</h5>
+                    </div>
+
+                    <div class="pull-left ml-30">
+                      <h3 class="youplay-match-title">Won</h3>
+                      <div class="date">10th May 2019, 10:30 am</div>
+                    </div>
+
+                    <div class="label youplay-match-count"><img src="assets/images/correct.png" style="height: 50px; width: 50px;"></div>
+
+                    <div class="clearfix"></div>
+                  </a>
+
+                  <a class="youplay-single-match" href="#">
+
+                    <div class="pull-left">
+                      <div class="angled-img">
+                        <div class="img">
+                          <img src="assets/images/G2_Esports.png" alt="G2_Esports" style="background-color: white">
+                        </div>
+                      </div>
+                      <h5 class="text-center">G2_Esports</h5>
+                    </div>
+
+                    <div class="pull-left ml-30">
+                      <div class="angled-img">
+                        <div class="img">
+                          <img src="assets/images/220px-Team_Liquidlogo_square.png" alt="Team Liquid" style="background-color: white">
+                        </div>
+                      </div>
+                      <h5 class="text-center">Team Liquid</h5>
+                    </div>
+
+                    <div class="pull-left ml-30">
+                      <h3 class="youplay-match-title">Lost</h3>
+                      <div class="date">10th May 2019, 4:30 pm</div>
+                    </div>
+
+                    <div class="label youplay-match-count"><img src="assets/images/incorrect.png" style="height: 50px; width: 50px;"></div>
+
+                    <div class="clearfix"></div>
+                  </a>
+                  <div class="youplay-matches-list">
+                    <a class="youplay-single-match" href="#">
+                      <div class="pull-left">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/clan-navi.jpg" alt="NAVI">
+                          </div>
+                        </div>
+                        <h5 class="text-center">NAVI</h5>
+                      </div>
+
+                      <div class="pull-left ml-30">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/Team_EnVyUs-logo.png" alt="Envy">
+                          </div>
+                        </div>
+                        <h5 class="text-center">Team Envy</h5>
+                      </div>
+
+                      <div class="pull-left ml-30">
+                        <h3 class="youplay-match-title">Won</h3>
+                        <div class="date">10th May 2019, 10:30 am</div>
+                      </div>
+
+                      <div class="label youplay-match-count"><img src="assets/images/correct.png" style="height: 50px; width: 50px;"></div>
+
+                      <div class="clearfix"></div>
+                    </a>
+                    <a class="youplay-single-match" href="#">
+
+                      <div class="pull-left">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/Rogue-Overwatch-Logo.jpg" alt="Rogue_Esport" style="background-color: white">
+                          </div>
+                        </div>
+                        <h5 class="text-center">Rogue Esport</h5>
+                      </div>
+
+                      <div class="pull-left ml-30">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/faze.png" alt="Team Liquid" style="background-color: white">
+                          </div>
+                        </div>
+                        <h5 class="text-center">FaZe</h5>
+                      </div>
+
+                      <div class="pull-left ml-30">
+                        <h3 class="youplay-match-title">Lost</h3>
+                        <div class="date">10th May 2019, 4:30 pm</div>
+                      </div>
+
+                      <div class="label youplay-match-count"><img src="assets/images/incorrect.png" style="height: 50px; width: 50px;"></div>
+
+                      <div class="clearfix"></div>
+                    </a>
+                  </div>
+                </div>
+                <!-- /CS Matches -->
+
+              </div>
+            </div>
+
+            <!-- /Comments List -->
+          </div>
+          <!-- /Post Comments -->
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-md-3">
+
+          <!-- Next Match -->
+          <div class="side-block">
+            <h4 class="block-title">Next Match</h4>
+            <div class="block-content">
+              <a class="youplay-match-widget" href="#">
+                <h3 class="youplay-match-title">Semi finals</h3>
+                <div class="date mb-15">12th May 2019, 5:30 pm</div>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="angled-img">
+                      <div class="img">
+                        <img src="assets/images/faze.png" class="op-10" alt="Faze">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="angled-img">
+                      <div class="img">
+                        <img src="assets/images/NIP.png" class="op-10" alt="NIP" style="background-color: black">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>FAZE</h5>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>NiP</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /Next Match -->
+
+          <!-- Recent Matches -->
+          <div class="side-block">
+            <h4 class="block-title">Recent Matches</h4>
+            <div role="tabpanel">
+              <ul class="nav nav-tabs mt-20" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#widget-match-cs" aria-controls="widget-match-cs" role="tab" data-toggle="tab" aria-expanded="true">CS:GO</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+
+                <!-- All Matches -->
+                <div role="tabpanel" class="tab-pane pl-0 pr-0 active" id="widget-match-all">
+                  <div class="youplay-matches-list">
+                    <a class="youplay-single-match" title="Game Show GEC" href="#">
+
+                      <div class="pull-left ml-5">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/NIP.png" alt="NiP" style="background-color: black">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pull-left ml-10 mt-10">
+                        vs
+                      </div>
+
+                      <div class="pull-left ml-10">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/clan-fnatic.jpg" alt="fnatic">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label youplay-match-count">16 : 14</div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="date">12th May 2019, 5:30 pm</div>
+                    </a>
+
+                    <a class="youplay-single-match" title="The International 2015" href="#">
+
+                      <div class="pull-left ml-5">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/Rogue-Overwatch-Logo.jpg" alt="Rogue">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pull-left ml-10 mt-10">
+                        vs
+                      </div>
+
+                      <div class="pull-left ml-10">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/faze.png" alt="Faze" style="background-color: white">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label youplay-match-count">10 : 16</div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="date">10th May 2019, 6:00 am</div>
+                    </a>
+
+                    <a class="youplay-single-match" title="RQuarter finals" href="#">
+
+                      <div class="pull-left ml-5">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/clan-navi.jpg" alt="NAVI">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pull-left ml-10 mt-10">
+                        vs
+                      </div>
+
+                      <div class="pull-left ml-10">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/Team_EnVyUs-logo.png" alt="Envy">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label youplay-match-count">12 : 16</div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="date">10th May 2019, 10:30 am</div>
+                    </a>
+
+                    <a class="youplay-single-match" title="Quarter finals" href="#">
+
+                      <div class="pull-left ml-5">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/G2_Esports.png" alt="G2_Esports" style="background-color: white">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pull-left ml-10 mt-10">
+                        vs
+                      </div>
+
+                      <div class="pull-left ml-10">
+                        <div class="angled-img">
+                          <div class="img">
+                            <img src="assets/images/220px-Team_Liquidlogo_square.png" alt="Team Liquid0" style="background-color: white">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="label youplay-match-count">16 : 14</div>
+
+                      <div class="clearfix"></div>
+
+                      <div class="date">10th May 2019, 4:30 pm</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- /Recent Matches -->
+
+                <!-- Facebook -->
+                <div class="side-block">
+                  <h4 class="block-title">Facebook</h4>
+                  <div class="fb-page" data-href="http://www.facebook.com/DarkSoulsGame" data-width="700" data-height="350"
+                    data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                    data-show-facepile="true" data-show-posts="true"></div>
+                </div>
+                <!-- /Facebook -->
+
+              </div>
+              <!-- Right Side -->
+
+            </div>
+
+          </div>
+
+          <!-- Footer -->
+          <footer class="youplay-footer-parallax">
+            <div class="wrapper" style="background-image: url('assets/images/footer-bg.jpg')">
+
+              <!-- Social Buttons -->
+              <div class="social">
+                <div class="container">
+                  <h3>Connect socially with <strong>youplay</strong></h3>
+
+                  <div class="social-icons">
+                    <div class="social-icon">
+                      <a href="#!">
+                        <i class="fa fa-facebook-square"></i>
+                        <span>Like on Facebook</span>
+                      </a>
+                    </div>
+                    <div class="social-icon">
+                      <a href="#!">
+                        <i class="fa fa-twitter-square"></i>
+                        <span>Follow on Twitter</span>
+                      </a>
+                    </div>
+                    <div class="social-icon">
+                      <a href="#!">
+                        <i class="fa fa-twitch"></i>
+                        <span>Watch on Twitch</span>
+                      </a>
+                    </div>
+                    <div class="social-icon">
+                      <a href="#!">
+                        <i class="fa fa-youtube-square"></i>
+                        <span>Watch on Youtube</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Social Buttons -->
+
+              <!-- Copyright -->
+              <div class="copyright">
+                <div class="container">
+                  <strong>nK</strong> &copy; 2016. All rights reserved
+                </div>
+              </div>
+              <!-- /Copyright -->
+
+            </div>
+          </footer>
+          <!-- /Footer -->
+
+
+  </section>
+  <!-- /Main Content -->
+
+  <!-- Search Block -->
+  <div class="search-block">
+    <a href="#!" class="search-toggle glyphicon glyphicon-remove"></a>
+    <form action="http://html.nkdev.info/youplay/dark/search.html">
+      <div class="youplay-input">
+        <input type="text" name="search" placeholder="Search...">
+      </div>
+    </form>
+  </div>
+  <!-- /Search Block -->
+
+  <script> $("#validate").click(function () {
+      $("#validate").text("Bet Validated !");
+    });</script>
+
+  <script> $("#validate2").click(function () {
+      $("#validate2").text("Bet Validated !");
+    });</script>
+  <script>
+    $('input[type="checkbox"]').on('change', function () {
+      $(this).siblings('input[type="checkbox"]').prop('checked', false);
+    });
+  </script>
+
+  <!-- Hexagon Progress -->
+  <script type="text/javascript" src="../assets/bower_components/HexagonProgress/jquery.hexagonprogress.min.js"></script>
+
+
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="../assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Jarallax -->
+  <script type="text/javascript" src="../assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+
+  <!-- Smooth Scroll -->
+  <script type="text/javascript" src="../assets/bower_components/smoothscroll-for-websites/SmoothScroll.js"></script>
+
+  <!-- Magnific Popup -->
+  <script type="text/javascript" src="../assets/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <!-- Youplay -->
+  <script type="text/javascript" src="../assets/youplay/js/youplay.min.js"></script>
+
+
+  <!-- init youplay -->
+  <script>
+    if (typeof youplay !== 'undefined') {
+      youplay.init({
+        // enable parallax
+        parallax: true,
+
+        // set small navbar on load
+        navbarSmall: false,
+
+        // enable fade effect between pages
+        fadeBetweenPages: true,
+
+        // twitter and instagram php paths
+        php: {
+          twitter: './php/twitter/tweet.php',
+          instagram: './php/instagram/instagram.php'
+        }
+      });
+    }
+  </script>
+
+
+</body>
+
+
+<!-- Mirrored from html.nkdev.info/youplay/dark/bet.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 May 2016 12:57:46 GMT -->
+
+</html>

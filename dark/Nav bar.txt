@@ -1,0 +1,64 @@
+<nav class="navbar-youplay navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="#" role="button" aria-expanded="false">
+                    VR </span> <span class="label">The new area</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!" role="button" aria-expanded="false">
+                      Tournament </span> <span class="label">All of the informations</span>
+              </a>
+            </li>
+            <li class="dropdown dropdown-hover">
+              <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      Games <span class="caret"></span> <span class="label">Try your luck</span>
+              </a>
+            <div class="dropdown-menu">
+              <ul role="menu">
+                <li><a href="#">Quizz</a>
+                </li>
+                <li><a href="#">E-Sport bets</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    Information<span class="caret"></span> <span class="label">On the spot</span>
+            </a>
+          <div class="dropdown-menu">
+            <ul role="menu">
+              <li><a href="#">Map</a>
+              </li>
+              <li><a href="#">Contact US</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown dropdown-hover">
+            <a href="login.html" role="button" aria-expanded="false">
+                      Connection <span class="label" ">Log In</span>
+                    </a>
+                </li>
+              </ul>
+            </div>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -26,6 +26,12 @@
 
   <link rel="stylesheet" type="text/css" href="../dark/assets/css/custom.css" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="jquery-3.3.1.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 
 
@@ -76,14 +82,14 @@
             </div>
           </li>
           <li class="dropdown dropdown-hover">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                 Information<span class="caret"></span> <span class="label">On the spot</span>
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              Information<span class="caret"></span> <span class="label">On the spot</span>
             </a>
             <div class="dropdown-menu">
-                 <ul role="menu">
-                      <li><a href="map.html">Map</a></li>
-                      <li><a href="contactus.html">Contact US</a></li>
-                 </ul>
+              <ul role="menu">
+                <li><a href="map.html">Map</a></li>
+                <li><a href="contactus.html">Contact US</a></li>
+              </ul>
             </div>
           </li>
         </ul>
@@ -107,7 +113,7 @@
 
     <!-- Banner -->
     <section class="youplay-banner banner-top youplay-banner-parallax">
-      <div class="image" style="background-image: url('assets/images/banner-bg.jpg')">
+      <div class="image" style="background-image: url('assets/images/quizz.jpeg')">
       </div>
       <div class="info">
         <div>
@@ -119,127 +125,371 @@
     </section>
     <!-- /Banner -->
 
-    <div class="container youplay-content">
+    <section class="content-wrap">
+      <div class="container youplay-content">
 
         <div class="row">
           <div class="col-md-9">
             <div class="col-xs-12 text-center">
-            <li><p class="btn">Where was the last Blast Pro Series Event ?</p></li>
+              <div class="btn-group">
+                <h3>Where was the last Blast Pro Series Event ?</h3>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">São Paulo</button>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">Miami</button>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">Paris</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center" style="margin-top: 70px" id="2">
+              <div class="btn-group">
+                <h3>Who won the Blast Pro Series of Lisbon ?</h3>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">Astralis</button>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">NAVI</button>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">Cloud 9</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center" style="margin-top: 70px" id="3">
+              <div class="btn-group">
+                <h3>Which Blaster Pro Series Card has more than 90 Blast Score ?</h3>
+                <div class="col-md-6 col-xs-12">
+                  <button class="btn">Xyp9x</button>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                  <button class="btn">device</button>
+                </div>
+                <div class="ccol-md-6 col-xs-12">
+                  <button class="btn">FalleN</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center" style="margin-top: 70px" id="4">
+              <div class="btn-group">
+                <h3>What was the prize pool for the Blast Pro Series event at São Paulo ?</h3>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">$250,000</button>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">$500,000</button>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">$100,000</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center" style="margin-top: 70px" id="5">
+              <div class="btn-group">
+                <h3>How many followers does Blast Pro Series has on Twitter ?</h3>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">32k</button>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">14k</button>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <button class="btn">27k</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-right" style="margin-top: 70px">
+              <div class="col-md-12 text-right">
+                <a href="confirmation.html" class="btn btn-lg active">Submit</a>
+              </div>
+            </div>
+          </div>
 
+          <!-- Right Side-->
+          <div class="col-md-3">
+
+            <!-- Next Match -->
+            <div class="side-block">
+              <h4 class="block-title">Next Match</h4>
+              <div class="block-content">
+                <a class="youplay-match-widget" href="#">
+                  <h3 class="youplay-match-title">Semi finals</h3>
+                  <div class="date mb-15">12th May 2019, 5:30 pm</div>
+
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <div class="angled-img">
+                        <div class="img" style="background-color: transparent">
+                          <img src="assets/images/faze.png" class="op-10" alt="Faze">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="angled-img">
+                        <div class="img" style="background-color: transparent">
+                          <img src="assets/images/NIP.png" class="op-10" alt="NIP">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h5>FAZE</h5>
+                    </div>
+                    <div class="col-md-6">
+                      <h5>NiP</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- /Next Match -->
+
+            <!-- Recent Matches -->
+            <div class="side-block">
+              <h4 class="block-title">Recent Matches</h4>
+              <div role="tabpanel">
+                <ul class="nav nav-tabs mt-20" role="tablist">
+                  <li role="presentation" class="active">
+                    <a href="#widget-match-cs" aria-controls="widget-match-cs" role="tab" data-toggle="tab"
+                      aria-expanded="true">CS:GO</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+
+                  <!-- All Matches -->
+                  <div role="tabpanel" class="tab-pane pl-0 pr-0 active" id="widget-match-all">
+                    <div class="youplay-matches-list">
+                      <a class="youplay-single-match" title="Game Show GEC" href="#">
+
+                        <div class="pull-left ml-5">
+                          <div class="angled-img">
+                            <div class="img" style="background-color: transparent">
+                              <img src="assets/images/NIP.png" alt="NiP">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="pull-left ml-10 mt-10">
+                          vs
+                        </div>
+
+                        <div class="pull-left ml-10">
+                          <div class="angled-img">
+                            <div class="img" style="background-color: transparent">
+                              <img src="assets/images/clan-fnatic.jpg" alt="fnatic">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label youplay-match-count">16 : 14</div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="date">12th May 2019, 5:30 pm</div>
+                      </a>
+
+                      <a class="youplay-single-match" title="The International 2015" href="#">
+
+                        <div class="pull-left ml-5">
+                          <div class="angled-img">
+                            <div class="img" style="background-color: transparent">
+                              <img src="assets/images/Rogue-Overwatch-Logo.jpg" alt="Rogue">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="pull-left ml-10 mt-10">
+                          vs
+                        </div>
+
+                        <div class="pull-left ml-10">
+                          <div class="angled-img">
+                            <div class="img" style="background-color: transparent">
+                              <img src="assets/images/faze.png" alt="Faze">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label youplay-match-count">10 : 16</div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="date">10th May 2019, 6:00 am</div>
+                      </a>
+
+                      <a class="youplay-single-match" title="Quarter finals" href="#">
+
+                        <div class="pull-left ml-5">
+                          <div class="angled-img">
+                            <div class="img">
+                              <img src="assets/images/clan-navi.jpg" alt="NAVI">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="pull-left ml-10 mt-10">
+                          vs
+                        </div>
+
+                        <div class="pull-left ml-10">
+                          <div class="angled-img">
+                            <div class="img" style="background-color: transparent">
+                              <img src="assets/images/Team_EnVyUs-logo.png" alt="Envy">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label youplay-match-count">12 : 16</div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="date">10th May 2019, 10:30 am</div>
+                      </a>
+
+                      <a class="youplay-single-match" title="Quarter finals" href="#">
+
+                        <div class="pull-left ml-5">
+                          <div class="angled-img">
+                            <div class="img" style="background-color: transparent">
+                              <img src="assets/images/G2_Esports.png" alt="G2_Esports">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="pull-left ml-10 mt-10">
+                          vs
+                        </div>
+
+                        <div class="pull-left ml-10">
+                          <div class="angled-img">
+                            <div class="img" style="background-color: transparent">
+                              <img src="assets/images/220px-Team_Liquidlogo_square.png" alt="Team Liquid0">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="label youplay-match-count">16 : 14</div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="date">10th May 2019, 4:30 pm</div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- /Recent Matches -->
+                </div>
+                <!-- Right Side -->
+
+              </div>
             </div>
           </div>
         </div>
-    </div>
-    <!-- Footer -->
-    <footer class="youplay-footer-parallax">
-      <div class="wrapper" style="background-image: url('assets/images/footer-bg.jpg')">
+      </div>
+      <!-- Footer -->
+      <div class="youplay-banner banner-top">
+        <div class="image" style="background-image: url('assets/images/footer2.jpg')"></div>
+        <div class="info">
+          <div>
+            <div class="youplay-form" style="background-color: transparent;">
+              <h1 style="text-align: center;">Follow US</h1>
+              <div class="col-xs-12 text-center">
+                <div class="btn-group social-list dib login">
+                  <a class="btn btn-default" title="Share on Facebook" href="https://www.facebook.com" style="margin-bottom: 10%;"><i
+                      class="fa fa-facebook" style="margin-right:5%"></i><span>Share or like on Facebook</span>
+                  </a>
+                  <a class="btn btn-default" href="https://twitter.com/login" title="Share on Twitter" style="margin-bottom: 10%;"><i
+                      class="fa fa-twitter" style="margin-right:5%"></i> <span>Share or like on twitter</span></a>
 
-        <!-- Social Buttons -->
-        <div class="social">
-          <div class="container">
-            <h3>Connect socially with <strong>WebApp</strong></h3>
+                  <a class="btn btn-default" href="https://accounts.google.com/Login" title="Share on Google Plus"
+                    style="margin-bottom: 10%;"><i class="fa fa-google-plus" style="margin-right:5%"></i><span>Share or like on Google</span></a>
 
-            <div class="social-icons">
-              <div class="social-icon">
-                <a href="#!">
-                  <i class="fas fa-facebook-square"></i>
-                  <span>Like on Facebook</span>
-                </a>
+                  <a class="btn btn-default" title="Share on twitch" href="https://www.twitch.tv/" style="margin-bottom: 10%;"><i
+                      class="fa fa-twitch" style="margin-right:5%"></i> <span>Share or like on Twitch</span></a>
+                </div>
               </div>
-              <div class="social-icon">
-                <a href="#!">
-                  <i class="fas fa-twitter-square"></i>
-                  <span>Follow on Twitter</span>
-                </a>
-              </div>
-              <div class="social-icon">
-                <a href="#!">
-                  <i class="fas fa-twitch"></i>
-                  <span>Watch on Twitch</span>
-                </a>
-              </div>
-              <div class="social-icon">
-                <a href="#!">
-                  <i class="fas fa-youtube-square"></i>
-                  <span>Watch on Youtube</span>
-                </a>
-              </div>
+              <br />
             </div>
           </div>
         </div>
-        <!-- /Social Buttons -->
-
-        <!-- Copyright -->
-        <div class="copyright">
-          <div class="container">
-            <strong>Chrysalis</strong> &copy; 2019. All rights reserved
-          </div>
+      </div>
+      <!-- Footer -->
+      <!-- Copyright -->
+      <div class="copyright">
+        <div class="container text-center">
+          <strong>Chrysalis</strong> &copy; 2019. All rights reserved
         </div>
-        <!-- /Copyright -->
+      </div>
+      <!-- /Copyright -->
 
       </div>
-    </footer>
-    <!-- /Footer -->
+      </footer>
+      <!-- /Footer -->
 
-  </section>
-  <!-- /Main Content -->
+    </section>
+    <!-- /Main Content -->
 
-  <!-- jQuery -->
-  <script type="text/javascript" src="../assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="../assets/bower_components/jquery/dist/jquery.min.js"></script>
 
-  <!-- Hexagon Progress -->
-  <script type="text/javascript" src="../assets/bower_components/HexagonProgress/jquery.hexagonprogress.min.js"></script>
-
-
-  <!-- Bootstrap -->
-  <script type="text/javascript" src="../assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <!-- Jarallax -->
-  <script type="text/javascript" src="../assets/bower_components/jarallax/dist/jarallax.min.js"></script>
-
-  <!-- Smooth Scroll -->
-  <script type="text/javascript" src="../assets/bower_components/smoothscroll-for-websites/SmoothScroll.js"></script>
-
-  <!-- Owl Carousel -->
-  <script type="text/javascript" src="../assets/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-
-  <!-- Countdown -->
-  <script type="text/javascript" src="../assets/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
-  <!-- Youplay -->
-  <script type="text/javascript" src="../assets/youplay/js/youplay.min.js"></script>
-
-  <!-- init youplay -->
-  <script>
-    if (typeof youplay !== 'undefined') {
-      youplay.init({
-        // enable parallax
-        parallax: true,
-
-        // set small navbar on load
-        navbarSmall: false,
-
-        // enable fade effect between pages
-        fadeBetweenPages: true,
-
-        // twitter and instagram php paths
-        php: {
-          twitter: './php/twitter/tweet.php',
-          instagram: './php/instagram/instagram.php'
-        }
-      });
-    }
-  </script>
+    <!-- Hexagon Progress -->
+    <script type="text/javascript" src="../assets/bower_components/HexagonProgress/jquery.hexagonprogress.min.js"></script>
 
 
-  <script type="text/javascript">
-    $(".countdown").each(function () {
-      $(this).countdown($(this).attr('data-end'), function (event) {
-        $(this).text(
-          event.strftime('%D days %H:%M:%S')
-        );
-      });
-    })
-  </script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="../assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Jarallax -->
+    <script type="text/javascript" src="../assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+
+    <!-- Smooth Scroll -->
+    <script type="text/javascript" src="../assets/bower_components/smoothscroll-for-websites/SmoothScroll.js"></script>
+
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="../assets/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <!-- Countdown -->
+    <script type="text/javascript" src="../assets/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+    <!-- Youplay -->
+    <script type="text/javascript" src="../assets/youplay/js/youplay.min.js"></script>
+
+    <!-- init youplay -->
+    <script>
+      if (typeof youplay !== 'undefined') {
+        youplay.init({
+          // enable parallax
+          parallax: true,
+
+          // set small navbar on load
+          navbarSmall: false,
+
+          // enable fade effect between pages
+          fadeBetweenPages: true,
+
+          // twitter and instagram php paths
+          php: {
+            twitter: './php/twitter/tweet.php',
+            instagram: './php/instagram/instagram.php'
+          }
+        });
+      }
+    </script>
+
+
+
+
+    <script type="text/javascript">
+      $(".countdown").each(function () {
+        $(this).countdown($(this).attr('data-end'), function (event) {
+          $(this).text(
+            event.strftime('%D days %H:%M:%S')
+          );
+        });
+      })
+    </script>
 
 </body>
 
